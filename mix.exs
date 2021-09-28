@@ -2,8 +2,8 @@ defmodule NebulexAdaptersCachex.MixProject do
   use Mix.Project
 
   @source_url "https://github.com/cabol/nebulex_adapters_cachex"
-  @version "2.1.0"
-  @nbx_vsn "2.1.0"
+  @version "2.2.0"
+  @nbx_vsn "2.2.0"
 
   def project do
     [
@@ -50,8 +50,8 @@ defmodule NebulexAdaptersCachex.MixProject do
   defp deps do
     [
       nebulex_dep(),
-      {:cachex, "~> 3.3"},
-      {:telemetry, "~> 0.4", optional: true},
+      {:cachex, "~> 3.4"},
+      {:telemetry, "~> 1.0", optional: true},
 
       # Test & Code Analysis
       {:excoveralls, "~> 0.13", only: :test},
